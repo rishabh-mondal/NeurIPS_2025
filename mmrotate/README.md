@@ -111,8 +111,6 @@ Refer to the [MMRotate Documentation](https://mmrotate.readthedocs.io/en/latest/
 
 
 
-
-
 ## 🗂️ Folder Structure and Utilities
 
 The `mmrotate_brickkiln` folder contains several scripts, notebooks, and resources to support training, evaluation, and analysis for brick kiln detection:
@@ -123,11 +121,14 @@ The `mmrotate_brickkiln` folder contains several scripts, notebooks, and resourc
 - `mmrotate/datasets/brickkiln.py`: Custom dataset definition for brick kiln detection, enabling integration with MMRotate's training and evaluation pipelines.
 
 
-### 🖼️ Visualization and Analysis
+
+### 📊 Evaluation and Analysis
 
 - `maps/`: Contains mAP (mean Average Precision) plots and CSVs for different models and checkpoints.
 - `loss_plots/`: Contains loss curve plots for different models for loss analysis.
-- `compare_img.ipynb`: Jupyter notebook for visually comparing images from two directories (e.g., ground truth vs. predictions).
+- [map_dota_all_epoch.ipynb](./mmrotate_brickkiln/map_dota_all_epoch.ipynb): Jupyter notebook for calculating mAP across all epochs for DOTA-format results.
+- [map_dota_single_epoch.ipynb](./mmrotate_brickkiln/map_dota_single_epoch.ipynb): Jupyter notebook for calculating mAP for a single epoch for DOTA-format results.
+- [compare_img.ipynb](./mmrotate_brickkiln/compare_img.ipynb): Jupyter notebook for visually comparing images from two directories (e.g., ground truth vs. predictions).
 
 
 

@@ -1,4 +1,6 @@
+
 # SentinelKilnDB: A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery [NeurIPS 2025]
+
 
 ## Results and Models
     
@@ -22,3 +24,17 @@
 | DETR-Based    | DETA             | ICCV-23     | Res50     | AA   | 65.34    | 44.01  | 47.56  | 55.21  | [cfg]() | [model]() | [log]() |
 |               | RFDETR           | arXiv-25    | Dinov2    | AA   | 79.64    | 64.26  | 63.68  | 64.25  | [cfg]() | [model]() | [log]() |
 |               | RTDETR           | CVPR-24     | Res101    | AA   | **87.53** | **63.03** | **68.60** | **64.30** | [cfg]() | [model]() | [log]() |
+
+
+
+## 📚 Subproject Documentation
+
+- [MMRotate Brick Kiln Detection](./mmrotate/README.md) — OBB models, configs, and scripts
+- [RF-DETR for Brick Kiln Detection](./rfdetr/README.md) — Transformer-based detection
+
+<details>
+<summary><strong>Setup Instructions</strong></summary>
+
+Setup and installation instructions are provided in the respective subproject READMEs linked above. Please refer to them for installation, environment setup, model training, evaluation, and inference instructions.
+
+</details>
