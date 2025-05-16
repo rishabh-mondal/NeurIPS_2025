@@ -1,3 +1,6 @@
+images/
+annfiles/
+annotated_images/
 sentinel_coco_data/
 
 # Byte-compiled / optimized / DLL files

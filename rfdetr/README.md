@@ -73,7 +73,7 @@ DOTA format annotations can be converted to COCO format using the provided [conv
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/rishabh-mondal/NeurIPS_2025
+    git clone https://github.com/rishabh-mondal/NeurIPS_2025.git
     cd rfdetr
     ```
 2. **Create a virtual environment and install dependencies:**
