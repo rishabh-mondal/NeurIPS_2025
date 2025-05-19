@@ -16,8 +16,15 @@
 
 | 🏷️ Model       | 📄 Paper   | 🧠 Backbone | BBox | 🎯 CA mAP50 | 🧱 CFCBK | 🧱 FCBK | 🧱 Zigzag | ⚙️ Config | 💾 Model |
 |:---------------|:----------:|:-----------:|:-------:|:-----------:|:--------:|:------:|:--------:|:---------:|:--------:|
-| PSC            | CVPR-23    | Res50       | OBB     | 27.41       | 0.38     | 13.83  | 17.03    | | [📄 PSC Dual AMP Config](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/configs/psc/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py)
- |[model]https://drive.google.com/file/d/1yGB0_fcGndLI9uCf678tE3OiHAYi3jds/view?usp=drive_link|
+
+
+
+| PSC | CVPR-23 | Res50 | OBB | 27.41 | 0.38 | 13.83 | 17.03 | [📄 Config](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/configs/psc/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py) | [🔗 Model](https://drive.google.com/file/d/1yGB0_fcGndLI9uCf678tE3OiHAYi3jds/view?usp=drive_link) |
+
+
+
+
+
 | H2RBox         | ICLR-23    | Res50       | OBB     | 47.01       | 24.93    | 30.27  | 31.02    | [cfg](#)  | [model](#) |
 | **RoI Transformer** | CVPR-19 | Swin-T      | OBB     | 🟩 **61.65** | 🟩 **45.31** | 🟩 **43.75** | 🟩 **47.46** | [cfg](#) | [model](#) |
 
