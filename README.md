@@ -4,9 +4,10 @@
 
 ## Results and Models
     
-| Category      | Method           | Publication | Backbone  | BBox | CA mAP50 | CFCBK  | FCBK   | Zigzag | Configs | Models | Logs |
+| Category      | Method           | Publication | Backbone  | BBox | CA mAP50 | CFCBK  | FCBK   | Zigzag | Configs | Models |
 |:-------------:|:-----------------|:-----------:|:---------:|:----:|:--------:|:------:|:------:|:------:|:-------:|:------:|:----:|
-| Two-stage     | PSC              | CVPR-23     | Res50     | OBB  | 27.41    | 0.38   | 13.83  | 17.03  | [cfg](NeurIPS_2025/mmrotate/mmrotate_brickkiln/configs/psc/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py) | [model](https://drive.google.com/file/d/1yGB0_fcGndLI9uCf678tE3OiHAYi3jds/view?usp=sharing)|
+| Two-stage | PSC | CVPR-23 | Res50 | OBB | 27.41 | 0.38 | 13.83 | 17.03 | [cfg](./NeurIPS_2025/mmrotate/mmrotate_brickkiln/configs/psc/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py) | [model](https://drive.google.com/file/d/1yGB0_fcGndLI9uCf678tE3OiHAYi3jds/view?usp=sharing) |
+
 |               | H2RBox           | ICLR-23     | Res50     | OBB  | 47.01    | 24.93  | 30.27  | 31.02  | [cfg]() | [model]()|
 |               | RoI Transformer  | CVPR-19     | Swin-T    | OBB  | 61.65    | 45.31  | 43.75  | 47.46  | [cfg]() | [model]()|
 | One-stage     | Rotated FCOS     | ICCV-19     | Res50     | OBB  | 15.62    | 12.72  | 8.48   | 9.99   | [cfg]() | [model]()|
