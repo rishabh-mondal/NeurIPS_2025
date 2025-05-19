@@ -14,9 +14,9 @@
 <details>
 <summary><strong>🧠 Two-Stage Models</strong></summary>
 
-| 🏷️ Model       | 📄 Paper   | 🧠 Backbone | 📦 BBox | 🎯 CA mAP50 | 🧱 CFCBK | 🧱 FCBK | 🧱 Zigzag | ⚙️ Config | 💾 Model |
+| 🏷️ Model       | 📄 Paper   | 🧠 Backbone | BBox | 🎯 CA mAP50 | 🧱 CFCBK | 🧱 FCBK | 🧱 Zigzag | ⚙️ Config | 💾 Model |
 |:---------------|:----------:|:-----------:|:-------:|:-----------:|:--------:|:------:|:--------:|:---------:|:--------:|
-| PSC            | CVPR-23    | Res50       | OBB     | 27.41       | 0.38     | 13.83  | 17.03    | [📄 CSL Gaussian Config](https://github.com/<username>/<repo>/blob/main/mmrotate_brickkiln/configs/rotated-retinanet-rbox-le90_r50_fpn_csl-gaussian_amp-1x_dota.py)| [model](https://drive.google.com/file/d/15yU8fWolXVYr2J_opp1EP52md_-vGu5c/view?usp=drive_link) |
+| PSC            | CVPR-23    | Res50       | OBB     | 27.41       | 0.38     | 13.83  | 17.03    | [📄 CSL Gaussian Config](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/rotated-retinanet-rbox-le90_r50_fpn_csl-gaussian_amp-1x_dota.py)| [model](https://drive.google.com/file/d/15yU8fWolXVYr2J_opp1EP52md_-vGu5c/view?usp=drive_link) |
 | H2RBox         | ICLR-23    | Res50       | OBB     | 47.01       | 24.93    | 30.27  | 31.02    | [cfg](#)  | [model](#) |
 | **RoI Transformer** | CVPR-19 | Swin-T      | OBB     | 🟩 **61.65** | 🟩 **45.31** | 🟩 **43.75** | 🟩 **47.46** | [cfg](#) | [model](#) |
 
