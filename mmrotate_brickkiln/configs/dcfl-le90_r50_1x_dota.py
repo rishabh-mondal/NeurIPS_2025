@@ -1,8 +1,8 @@
 _base_ = [
-    '../_base_/datasets/dota.py',  # Update path if needed
-    '../_base_/schedules/schedule_1x.py',
+    '../_base_/datasets/brickkiln.py', '../_base_/schedules/schedule_1x.py',
     '../_base_/default_runtime.py'
 ]
+
 
 angle_version = 'le90'
 num_epochs = 25
