@@ -122,8 +122,8 @@ All frameworks are installed in a single Conda environment named `oncell`.
 
 ## Installation Steps
 
-<details>
-<summary><strong>Expand for step-by-step instructions</strong></summary>
+<!-- <details>
+<summary><strong>Expand for step-by-step instructions</strong></summary> -->
 
 ```bash
 # 1. Create and activate a Conda environment
@@ -165,6 +165,46 @@ pip install transformers
 ```
 
 ---
+
+## Traing the models
+mmrotate models can be trained using the following command:
+
+Clone this repo and copy configs and files to mmrotate folder.
+
+cd ../
+git clone https://github.com/rishabh-mondal/NeurIPS_2025.git
+cp -r NeurIPS_2025/mmrotate/mmrotate_brickkiln/* mmrotate/
+cd mmrotate
+
+## Example Usage
+
+# ===== MMRotate Training =====
+# Syntax: bash tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUMs}
+# Example: Train on 4 GPUs
+bash tools/dist_train.sh configs/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py 0,1,2,3
+
+
+# ===== Ultralytics Model Training =====
+cd training_scripts
+chmod +x train.sh
+./train.sh
+
+
+# ===== RFDETR Model Training =====
+cd training_scripts
+export CUDA_VISIBLE_DEVICES=0
+nohup python rfdetr_train.py > ./logs/rfdetr_large/sentinel_data.log 2>&1 &
+
+
+# ===== DETA Model Training =====
+cd training_scripts
+export CUDA_VISIBLE_DEVICES=0
+nohup python deta_train.py > ./logs/deta_large/sentinel_data.log 2>&1 &
+
+
+
+
+
 ---
 ## 📊 Results and Benchmarks
 

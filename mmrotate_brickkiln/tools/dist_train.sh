@@ -34,8 +34,6 @@ echo "Training started. Logs are being written to $LOG_DIR"
 
 
 
-
-# conda activate open-mmlab
 # cd mmrotate
 
 # bash tools/dist_train.sh 'configs/oriented_rcnn/oriented_rcnn_r50_fpn_1x_brickkiln_le90.py' 3
