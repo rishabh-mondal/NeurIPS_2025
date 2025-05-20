@@ -93,6 +93,74 @@ This section summarizes the key scripts used for downloading Sentinel-2 tiles, h
 
 ---
 
+### Setup Guidelines
+
+
+## Supported Frameworks
+
+- [MMRotate](https://github.com/open-mmlab/mmrotate) — Oriented Object Detection (Rotated Bounding Boxes)
+- [Ultralytics](https://github.com/ultralytics/ultralytics) — YOLOv12, YOLOv11-OBB, RT-DETR, YOLOv12
+- [RFDETR](https://github.com/rishabh-mondal/NeurIPS_2025) — Transformer-based Custom Detector
+- [DETA](https://huggingface.co/docs/transformers/main/en/model_doc/deta) — Hugging Face DETR Variant
+
+---
+
+## Environment Setup:
+
+This setup assumes:
+- Python 3.8+
+- CUDA 11.1-compatible GPU
+
+All frameworks will be installed within a **single Conda environment** for consistency and reproducibility.
+
+---
+
+### Step-by-Step Installation
+
+```bash
+# 1. Create and activate a unified Conda environment
+conda create -n oncell python=3.8 -y
+conda activate oncell
+
+# 2. Install PyTorch with CUDA 11.1 support
+pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+
+# 3. Install MMCV (required by MMRotate)
+pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
+
+# 4. Remove any conflicting COCO libraries
+pip uninstall -y pycocotools
+
+# 5. Clone and install MMRotate
+git clone https://github.com/open-mmlab/mmrotate.git
+cd mmrotate
+pip install -r requirements/build.txt
+pip install -v -e . --user
+cd ..
+
+# 6. Install MMEngine (dependency for MMRotate)
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple mmengine
+mim install mmengine
+
+# 7. Install Ultralytics framework (YOLOv8 and variants)
+pip install ultralytics
+
+# 8. Clone and install RFDETR
+git clone https://github.com/rishabh-mondal/NeurIPS_2025.git
+cd NeurIPS_2025/rfdetr
+pip install -r requirements.txt
+cd ../..
+
+# 9. Install Hugging Face Transformers (for DETA)
+pip install transformers
+
+```
+
+
+
+
+
+
 ## 📊 Results and Benchmarks
 
 > 🟩 **Highest score** per column is highlighted  
