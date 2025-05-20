@@ -179,6 +179,19 @@ pip install transformers
 
 ---
 
+## 🔍 Model Inference and Evaluation
+
+| Model         | Task        | Command / Notebook                                                                                   |
+|---------------|-------------|-------------------------------------------------------------------------------------------------------|
+| **MMRotate**  | Inference   | ```bash<br>cd model_inference_evaluation_scripts<br>export CUDA_VISIBLE_DEVICES=0<br>python folder_inference_mine.py<br>``` |
+|               | Evaluation  | [mmrotate_eval.ipynb](./mmrotate_eval.ipynb)                                                         |
+| **Ultralytics** | Evaluation | ```bash<br>cd model_inference_evaluation_scripts<br>export CUDA_VISIBLE_DEVICES=0<br>```<br>[ultralytics_eval.ipynb](./ultralytics_eval.ipynb) |
+| **RFDETR**    | Inference   | ```bash<br>cd model_inference_evaluation_scripts<br>export CUDA_VISIBLE_DEVICES=0<br>python rfdetr_inference.py<br>``` |
+|               | Evaluation  | ```bash<br>python rfdetr_eval.py<br>```                                                              |
+| **DETA**      | Inference   | ```bash<br>cd model_inference_evaluation_scripts<br>export CUDA_VISIBLE_DEVICES=0<br>python deta_inference.py<br>``` |
+
+
+
 
 ## Model Performance
 
@@ -236,7 +249,7 @@ pip install transformers
 </details>
 
 ---
-
+<!-- 
 ## 📦 Subprojects
 
 - 🔄 [`mmrotate`](./mmrotate/README.md) — OBB Detection with MMRotate  
@@ -244,7 +257,8 @@ pip install transformers
 - 🚀 [`yolo`](./yolo/README.md) — YOLOv8/YOLOv12 implementation with custom AA head  
 - 📁 [`dataset`](./dataset/README.md) — Brick kiln dataset splits, annotations, & pre-processing tools  
 
----
+--- -->
+
 
 ## 📌 Citation (Coming Soon)
 
