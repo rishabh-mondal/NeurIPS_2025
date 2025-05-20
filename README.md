@@ -1,4 +1,4 @@
-# 🧱 SentinelKilnDB  
+# SentinelKilnDB  
 ### A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery  
 **[NeurIPS 2025 Submission]**
 
@@ -8,17 +8,40 @@
 
 | Attribute        | Details                                 |
 |------------------|------------------------------------------|
-| 🗂️ **Dataset**     | SentinelKilnDB                          |
-| 💾 **Size**        | ~4.00 GB                                |
-| 🖼️ **Images**      | 78,707 RGB (10m resolution)             |
-| 🛰️ **Satellite**    | Sentinel-2                              |
-| 🕒 **Time Period**  | Sept 2023 – Feb 2024                    |
-| 📝 **Annotations**  | 105,933 Oriented Bounding Boxes (OBBs) |
-| 🏷️ **Classes**      | 3 — CFCBK, FCBK, Zigzag                 |
-| 📁 **Format**       | DOTA, YOLO-OBB, YOLO-AA                |
-| 📄 **License**      | CC BY-NC-SA 4.0                         |
+| **Dataset**     | SentinelKilnDB                          |
+| **Size**        | ~4.00 GB                                |
+| **Images**      | 78,707 RGB (10m resolution)             |
+| **Satellite**    | Sentinel-2                              |
+| **Time Period**  | Sept 2023 – Feb 2024                    |
+| **Annotations**  | 105,933 Oriented Bounding Boxes (OBBs) |
+| **Classes**      | 3 — CFCBK, FCBK, Zigzag                 |
+| **Format**       | DOTA, YOLO-OBB, YOLO-AA                |
+| **License**      | CC BY-NC-SA 4.0                         |
 
 ---
+---
+
+## Sample Images
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/figures/sent_1.png" alt="Image 1" width="300"/><br/>
+      <sub><b>Image 1</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/figures/sent_2.png" alt="Image 2" width="300"/><br/>
+      <sub><b>Image 2</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/figures/sent_3.png" alt="Image 3" width="300"/><br/>
+      <sub><b>Image 3</b></sub>
+    </td>
+  </tr>
+</table>
+
+---
+
 
 
 ## 📊 Results and Benchmarks
@@ -32,7 +55,7 @@
 <details>
 <summary><strong>🧠 Two-Stage Models</strong></summary>
 
-| 🏷️ Model             | 📄 Paper  | 🧠 Backbone | BBox | 🎯 CA mAP50 | 🧱 CFCBK | 🧱 FCBK | 🧱 Zigzag | ⚙️ Config | 💾 Model |
+| 🏷️ Model             | 📄 Paper  | Backbone | BBox | CA mAP50 | CFCBK | FCBK | Zigzag | ⚙️ Config | 💾 Model |
 |----------------------|-----------|-------------|---------|-------------|----------|--------|-----------|-----------|----------|
 | PSC                  | CVPR-23   | Res50       | OBB     | 27.41       | 0.38     | 13.83  | 17.03     | [📄 Config](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/configs/psc/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py) | [🔗 Model](https://drive.google.com/file/d/1yGB0_fcGndLI9uCf678tE3OiHAYi3jds/view?usp=drive_link) |
 | H2RBox               | ICLR-23   | Res50       | OBB     | 47.01       | 24.93    | 30.27  | 31.02     | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/h2rbox-le90_r50_fpn_adamw-1x_dota.py) | [Model](https://drive.google.com/file/d/18Flaofo6yeTioR_1Xo6T7Hnfh94al9f9/view?usp=drive_link) |
@@ -45,7 +68,7 @@
 <details>
 <summary><strong>⚡ One-Stage Models</strong></summary>
 
-| 🏷️ Model             | 📄 Paper  | 🧠 Backbone | 📦 BBox | 🎯 CA mAP50 | 🧱 CFCBK | 🧱 FCBK | 🧱 Zigzag | ⚙️ Config | 💾 Model |
+| 🏷️ Model             | 📄 Paper  | Backbone | BBox | CA mAP50 | CFCBK | FCBK | Zigzag | ⚙️ Config | 💾 Model |
 |----------------------|-----------|-------------|---------|-------------|----------|--------|-----------|-----------|----------|
 | Rotated FCOS         | ICCV-19   | Res50       | OBB     | 15.62       | 12.72    | 8.48   | 9.99      | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/rotated-fcos-le90_r50_fpn_1x_dota.py) | [Model](https://drive.google.com/file/d/14VM3UybLOgL46Q__cqdWcxGV5_HU9nqI/view?usp=drive_link) |
 | DCFL                 | CVPR-23   | Res50       | OBB     | 16.01       | 9.07     | 6.51   | 12.97     | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/dcfl-le90_r50_1x_dota.py) | [Model](https://drive.google.com/file/d/1Jnr-V3gK9J3Z20u3R0FvCxZBUt3oJcW0/view?usp=drive_link) |
@@ -67,7 +90,7 @@
 <details>
 <summary><strong>🔷 DETR-Based Models</strong></summary>
 
-| 🏷️ Model       | 📄 Paper  | 🧠 Backbone | 📦 BBox | 🎯 CA mAP50 | 🧱 CFCBK | 🧱 FCBK | 🧱 Zigzag | ⚙️ Config | 💾 Model |
+| 🏷️ Model       | 📄 Paper  | Backbone | BBox | CA mAP50 | CFCBK | FCBK | Zigzag | ⚙️ Config | 💾 Model |
 |----------------|-----------|-------------|---------|-------------|----------|--------|-----------|-----------|----------|
 | DETA           | ICCV-23   | Res50       | AA      | 65.34       | 44.01    | 47.56  | 55.21     | [Config](#) | [Model](#) |
 | 🟩 **RFDETR**   | arXiv-25  | Dinov2      | AA      | 79.64       | 🟩 **64.26** | 63.68  | 64.25     | [Config](#) | [Model](#) |
