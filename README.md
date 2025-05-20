@@ -55,27 +55,43 @@ Stratified by class to ensure balanced representation across training, validatio
 
 ---
 
-## Data Downloading process and Preprocessing notebooks
-
----
 
 ## Data Downloading Process and Preprocessing Notebooks
 
-Below are the key scripts used for downloading, handling missing tiles, and preprocessing both image and label data from Sentinel-2 imagery.
+This section outlines the core scripts used for downloading Sentinel-2 imagery, handling missing tiles, preprocessing image and label data, converting label formats, and splitting the dataset.
 
 ### Downloading Scripts
-- **Bulk Tile Download**: [sentinel_tile_bulk_download.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/sentinel_tile_bulk_download.py)
-- **Identify Missing Tiles**: [finding_missing_tiles.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/finding_missing_tiles.py)
-- **Download Missing Tiles**: [run_missing_tiles_download.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/run_missing_tiles_download.py)
+- **Bulk Tile Download**  
+  [sentinel_tile_bulk_download.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/sentinel_tile_bulk_download.py)
+
+- **Identify Missing Tiles**  
+  [finding_missing_tiles.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/finding_missing_tiles.py)
+
+- **Download Missing Tiles**  
+  [run_missing_tiles_download.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/run_missing_tiles_download.py)
 
 ### Preprocessing Scripts
-- **Tile Splitting**: [tile_processing.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py)
-- **Label Preprocessing**: [tile_processing.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py)
-- **Patch & Label Visualization**: [tile_processing.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py)
+- **Tile Splitting**  
+  [tile_processing.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py)
 
-> **Note:** The `tile_processing.py` script includes logic for tile splitting, label transformation, and visualization.
+- **Label Preprocessing**  
+  [tile_processing.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py)
+
+- **Patch and Label Visualization**  
+  [tile_processing.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py)
+
+> **Note**: The `tile_processing.py` script includes all logic for tile splitting, label transformation, and patch visualization.
+
+### Label Format Conversion
+- **Convert to YOLO / DOTA / Custom Formats**  
+  [label_format_coversion.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/label_format_coversion.py)
+
+### Dataset Splitting
+- **Train / Validation / Test Split**  
+  [data_splits.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/data_splits.py)
 
 ---
+
 
 
 
