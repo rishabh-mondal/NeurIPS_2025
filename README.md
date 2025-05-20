@@ -4,6 +4,23 @@
 
 ---
 
+## Dataset Overview — *SentinelKilnDB*
+
+| Attribute        | Details                                 |
+|------------------|------------------------------------------|
+| 🗂️ **Dataset**     | SentinelKilnDB                          |
+| 💾 **Size**        | ~4.00 GB                                |
+| 🖼️ **Images**      | 78,707 RGB (10m resolution)             |
+| 🛰️ **Satellite**    | Sentinel-2                              |
+| 🕒 **Time Period**  | Sept 2023 – Feb 2024                    |
+| 📝 **Annotations**  | 105,933 Oriented Bounding Boxes (OBBs) |
+| 🏷️ **Classes**      | 3 — CFCBK, FCBK, Zigzag                 |
+| 📁 **Format**       | DOTA, YOLO-OBB, YOLO-AA                |
+| 📄 **License**      | CC BY-NC-SA 4.0                         |
+
+---
+
+
 ## 📊 Results and Benchmarks
 
 > 🟩 **Highest score** per column is highlighted  
@@ -15,7 +32,7 @@
 <details>
 <summary><strong>🧠 Two-Stage Models</strong></summary>
 
-| 🏷️ Model             | 📄 Paper  | 🧠 Backbone | 📦 BBox | 🎯 CA mAP50 | 🧱 CFCBK | 🧱 FCBK | 🧱 Zigzag | ⚙️ Config | 💾 Model |
+| 🏷️ Model             | 📄 Paper  | 🧠 Backbone | BBox | 🎯 CA mAP50 | 🧱 CFCBK | 🧱 FCBK | 🧱 Zigzag | ⚙️ Config | 💾 Model |
 |----------------------|-----------|-------------|---------|-------------|----------|--------|-----------|-----------|----------|
 | PSC                  | CVPR-23   | Res50       | OBB     | 27.41       | 0.38     | 13.83  | 17.03     | [📄 Config](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/configs/psc/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py) | [🔗 Model](https://drive.google.com/file/d/1yGB0_fcGndLI9uCf678tE3OiHAYi3jds/view?usp=drive_link) |
 | H2RBox               | ICLR-23   | Res50       | OBB     | 47.01       | 24.93    | 30.27  | 31.02     | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/h2rbox-le90_r50_fpn_adamw-1x_dota.py) | [Model](https://drive.google.com/file/d/18Flaofo6yeTioR_1Xo6T7Hnfh94al9f9/view?usp=drive_link) |
