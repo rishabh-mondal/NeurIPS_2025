@@ -203,7 +203,7 @@ pip install transformers
 ---
 
 <details>
-<summary><strong>🧠 Two-Stage Models</strong></summary>
+<summary><strong>Two-Stage Models</strong></summary>
 
 | 🏷️ Model             | 📄 Paper  | Backbone | BBox | CA mAP50 | CFCBK | FCBK | Zigzag | ⚙️ Config | 💾 Model |
 |----------------------|-----------|-------------|---------|-------------|----------|--------|-----------|-----------|----------|
@@ -216,7 +216,7 @@ pip install transformers
 ---
 
 <details>
-<summary><strong>⚡ One-Stage Models</strong></summary>
+<summary><strong>One-Stage Models</strong></summary>
 
 | 🏷️ Model             | 📄 Paper  | Backbone | BBox | CA mAP50 | CFCBK | FCBK | Zigzag | ⚙️ Config | 💾 Model |
 |----------------------|-----------|-------------|---------|-------------|----------|--------|-----------|-----------|----------|
@@ -238,7 +238,7 @@ pip install transformers
 ---
 
 <details>
-<summary><strong>🔷 DETR-Based Models</strong></summary>
+<summary><strong>DETR-Based Models</strong></summary>
 
 | 🏷️ Model       | 📄 Paper  | Backbone | BBox | CA mAP50 | CFCBK | FCBK | Zigzag | ⚙️ Config | 💾 Model |
 |----------------|-----------|-------------|---------|-------------|----------|--------|-----------|-----------|----------|
@@ -248,17 +248,12 @@ pip install transformers
 
 </details>
 
----
-<!-- 
-## 📦 Subprojects
-
-- 🔄 [`mmrotate`](./mmrotate/README.md) — OBB Detection with MMRotate  
-- 🔧 [`rfdetr`](./rfdetr/README.md) — DETR-based RFDETR implementation  
-- 🚀 [`yolo`](./yolo/README.md) — YOLOv8/YOLOv12 implementation with custom AA head  
-- 📁 [`dataset`](./dataset/README.md) — Brick kiln dataset splits, annotations, & pre-processing tools  
-
---- -->
 
 
-## 📌 Citation (Coming Soon)
+## Citation (Coming Soon)
 
+
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
+For questions or collaborations, please contact [Rishabh Mondal](mailto:rishabh.mondal@iitgn.ac.in).
