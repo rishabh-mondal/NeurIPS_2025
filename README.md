@@ -58,43 +58,40 @@ Stratified by class to ensure balanced representation across training, validatio
 
 ## Data Downloading Process and Preprocessing Notebooks
 
-This section outlines the core scripts used for downloading Sentinel-2 imagery, handling missing tiles, preprocessing image and label data, converting label formats, and splitting the dataset.
-
-### Downloading Scripts
-- **Bulk Tile Download**  
-  [sentinel_tile_bulk_download.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/sentinel_tile_bulk_download.py)
-
-- **Identify Missing Tiles**  
-  [finding_missing_tiles.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/finding_missing_tiles.py)
-
-- **Download Missing Tiles**  
-  [run_missing_tiles_download.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/run_missing_tiles_download.py)
-
-### Preprocessing Scripts
-- **Tile Splitting**  
-  [tile_processing.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py)
-
-- **Label Preprocessing**  
-  [tile_processing.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py)
-
-- **Patch and Label Visualization**  
-  [tile_processing.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py)
-
-> **Note**: The `tile_processing.py` script includes all logic for tile splitting, label transformation, and patch visualization.
-
-### Label Format Conversion
-- **Convert to YOLO / DOTA / Custom Formats**  
-  [label_format_coversion.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/label_format_coversion.py)
-
-### Dataset Splitting
-- **Train / Validation / Test Split**  
-  [data_splits.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/data_splits.py)
+This section summarizes the key scripts used for downloading Sentinel-2 tiles, handling missing data, preprocessing labels, and splitting datasets. All scripts are located in the [`data_scripts`](https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/data_scripts) directory.
 
 ---
 
+### Downloading & Tile Management
 
+| Script | Description |
+|--------|-------------|
+| [`sentinel_tile_bulk_download.py`](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/sentinel_tile_bulk_download.py) | Downloads Sentinel-2 tiles in bulk based on region and time range. |
+| [`finding_missing_tiles.py`](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/finding_missing_tiles.py) | Detects tiles that are missing or not downloaded properly. |
+| [`run_missing_tiles_download.py`](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/run_missing_tiles_download.py) | Re-downloads missing or corrupted tiles. |
 
+---
 
+### Preprocessing & Visualization
+
+| Script | Description |
+|--------|-------------|
+| [`tile_processing.py`](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py) | Splits raw Sentinel-2 tiles into fixed-size patches, preprocesses labels, and visualizes patches. |
+| [`label_format_coversion.py`](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/label_format_coversion.py) | Converts labels into YOLO, DOTA, and YOLO-AA formats. |
+
+---
+
+### Dataset Splitting
+
+| Script | Description |
+|--------|-------------|
+| [`data_splits.py`](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/data_splits.py) | Performs stratified train/val/test split based on label distribution. |
+
+---
+
+> **Tip**: Each script is modular and can be executed independently, making the pipeline flexible and customizable.
+
+---
 
 ## 📊 Results and Benchmarks
 
