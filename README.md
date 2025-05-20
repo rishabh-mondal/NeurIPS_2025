@@ -167,6 +167,9 @@ pip install transformers
 ---
 
 ## Traing the models
+
+
+### MMRotate Training
 mmrotate models can be trained using the following command:
 
 Clone this repo and copy configs and files to mmrotate folder.
@@ -175,38 +178,25 @@ cd ../
 git clone https://github.com/rishabh-mondal/NeurIPS_2025.git
 cp -r NeurIPS_2025/mmrotate/mmrotate_brickkiln/* mmrotate/
 cd mmrotate
-
-## Example Usage
-
-# ===== MMRotate Training =====
-# Syntax: bash tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUMs}
-# Example: Train on 4 GPUs
+### Run distributed training on multiple GPUs
+### Usage: bash tools/dist_train.sh <CONFIG_FILE> <GPU_IDS>
 bash tools/dist_train.sh configs/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py 0,1,2,3
 
-
-# ===== Ultralytics Model Training =====
+### Ultralytics Model Training
 cd training_scripts
 chmod +x train.sh
 ./train.sh
 
-
-# ===== RFDETR Model Training =====
+### RFDETR Model Training
 cd training_scripts
 export CUDA_VISIBLE_DEVICES=0
 nohup python rfdetr_train.py > ./logs/rfdetr_large/sentinel_data.log 2>&1 &
 
-
-# ===== DETA Model Training =====
+### DETA Model Training
 cd training_scripts
 export CUDA_VISIBLE_DEVICES=0
 nohup python deta_train.py > ./logs/deta_large/sentinel_data.log 2>&1 &
 
-
-
-
-
----
-## 📊 Results and Benchmarks
 
 > 🟩 **Highest score** per column is highlighted  
 > 🔽 Click on a category to expand its models  
