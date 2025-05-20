@@ -42,6 +42,42 @@
 
 ---
 
+## Dataset Split
+
+Stratified by class to ensure balanced representation across training, validation, and test sets.
+
+| Split       | Images  | Annotations | CFCBK | FCBK  | Zigzag |
+|-------------|---------|-------------|-------|-------|--------|
+| Train       | 47,214  | 47,214      | 2,032 | 34,292| 27,463 |
+| Validation  | 15,738  | 15,738      |   649 | 11,339|  9,054 |
+| Test        | 15,738  | 15,738      |   647 |  9,141| 11,312 |
+| **Total**   | 78,707  | 105,933     | 3,328 | 54,772| 47,829 |
+
+---
+
+## Data Downloading process and Preprocessing notebooks
+
+---
+
+## Data Downloading Process and Preprocessing Notebooks
+
+Below are the key scripts used for downloading, handling missing tiles, and preprocessing both image and label data from Sentinel-2 imagery.
+
+### Downloading Scripts
+- **Bulk Tile Download**: [sentinel_tile_bulk_download.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/sentinel_tile_bulk_download.py)
+- **Identify Missing Tiles**: [finding_missing_tiles.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/finding_missing_tiles.py)
+- **Download Missing Tiles**: [run_missing_tiles_download.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/run_missing_tiles_download.py)
+
+### Preprocessing Scripts
+- **Tile Splitting**: [tile_processing.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py)
+- **Label Preprocessing**: [tile_processing.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py)
+- **Patch & Label Visualization**: [tile_processing.py](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py)
+
+> **Note:** The `tile_processing.py` script includes logic for tile splitting, label transformation, and visualization.
+
+---
+
+
 
 
 ## 📊 Results and Benchmarks
