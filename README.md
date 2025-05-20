@@ -93,7 +93,7 @@ This section summarizes the key scripts used for downloading Sentinel-2 tiles, h
 
 ---
 
-# 🧩 Unified Setup Guide — One-Cell Environment
+# Unified Setup Guide — One-Cell Environment
 
 > A **single Conda environment** for multiple cutting-edge object detection frameworks, enabling reproducible and seamless development.
 
@@ -167,35 +167,20 @@ pip install transformers
 ---
 
 ## Traing the models
+### Model Training Commands
+
+| Model           | Steps                                                                                       | Commands                                                                                                          |
+|-----------------|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **MMRotate**    | 1. Clone repo and copy configs to `mmrotate` folder<br>2. Run distributed training on GPUs  | ```bash<br>git clone https://github.com/rishabh-mondal/NeurIPS_2025.git<br>cp -r NeurIPS_2025/mmrotate/mmrotate_brickkiln/* mmrotate/<br>cd mmrotate<br>bash tools/dist_train.sh configs/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py 0,1,2,3<br>``` |
+| **Ultralytics** | Run training script                                                                          | ```bash<br>cd training_scripts<br>chmod +x train.sh<br>./train.sh<br>```                                          |
+| **RFDETR**      | Run training with CUDA device 0 and save logs                                              | ```bash<br>cd training_scripts<br>export CUDA_VISIBLE_DEVICES=0<br>nohup python rfdetr_train.py > ./logs/rfdetr_large/sentinel_data.log 2>&1 &<br>``` |
+| **DETA**        | Run training with CUDA device 0 and save logs                                              | ```bash<br>cd training_scripts<br>export CUDA_VISIBLE_DEVICES=0<br>nohup python deta_train.py > ./logs/deta_large/sentinel_data.log 2>&1 &<br>```       |
 
 
-### MMRotate Training
-mmrotate models can be trained using the following command:
+---
 
-Clone this repo and copy configs and files to mmrotate folder.
 
-cd ../
-git clone https://github.com/rishabh-mondal/NeurIPS_2025.git
-cp -r NeurIPS_2025/mmrotate/mmrotate_brickkiln/* mmrotate/
-cd mmrotate
-### Run distributed training on multiple GPUs
-### Usage: bash tools/dist_train.sh <CONFIG_FILE> <GPU_IDS>
-bash tools/dist_train.sh configs/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py 0,1,2,3
-
-### Ultralytics Model Training
-cd training_scripts
-chmod +x train.sh
-./train.sh
-
-### RFDETR Model Training
-cd training_scripts
-export CUDA_VISIBLE_DEVICES=0
-nohup python rfdetr_train.py > ./logs/rfdetr_large/sentinel_data.log 2>&1 &
-
-### DETA Model Training
-cd training_scripts
-export CUDA_VISIBLE_DEVICES=0
-nohup python deta_train.py > ./logs/deta_large/sentinel_data.log 2>&1 &
+## Model Performance
 
 
 > 🟩 **Highest score** per column is highlighted  
