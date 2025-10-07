@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.47">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="sentinelkilndb" class="level1">
+<h1>SentinelKilnDB</h1>
+<section id="a-large-scale-dataset-and-benchmark-for-obb-brick-kiln-detection-in-south-asia-using-satellite-imagery" class="level3">
+<h3 class="anchored" data-anchor-id="a-large-scale-dataset-and-benchmark-for-obb-brick-kiln-detection-in-south-asia-using-satellite-imagery">A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery</h3>
+<p><strong>[NeurIPS 2025 Submission]</strong></p>
+<hr>
+</section>
+<section id="dataset-overview-sentinelkilndb" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-overview-sentinelkilndb">Dataset Overview — <em>SentinelKilnDB</em></h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Dataset</strong></td>
+<td>SentinelKilnDB</td>
+</tr>
+<tr class="even">
+<td><strong>Size</strong></td>
+<td>~4.00 GB</td>
+</tr>
+<tr class="odd">
+<td><strong>Images</strong></td>
+<td>78,707 RGB (10m resolution)</td>
+</tr>
+<tr class="even">
+<td><strong>Satellite</strong></td>
+<td>Sentinel-2</td>
+</tr>
+<tr class="odd">
+<td><strong>Time Period</strong></td>
+<td>Sept 2023 – Feb 2024</td>
+</tr>
+<tr class="even">
+<td><strong>Annotations</strong></td>
+<td>105,933 Oriented Bounding Boxes (OBBs)</td>
+</tr>
+<tr class="odd">
+<td><strong>Classes</strong></td>
+<td>3 — CFCBK, FCBK, Zigzag</td>
+</tr>
+<tr class="even">
+<td><strong>Format</strong></td>
+<td>DOTA, YOLO-OBB, YOLO-AA</td>
+</tr>
+<tr class="odd">
+<td><strong>License</strong></td>
+<td>CC BY-NC-SA 4.0</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sample-images" class="level2">
+<h2 class="anchored" data-anchor-id="sample-images">Sample Images</h2>
+<table>
+<tbody><tr>
+<td align="center">
+<img src="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/figures/sent_1.png" alt="Image 1" width="300"><br> <sub><b>Image 1</b></sub>
+</td>
+<td align="center">
+<img src="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/figures/sent_2.png" alt="Image 2" width="300"><br> <sub><b>Image 2</b></sub>
+</td>
+<td align="center">
+<img src="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/figures/sent_3.png" alt="Image 3" width="300"><br> <sub><b>Image 3</b></sub>
+</td>
+</tr>
+</tbody></table>
+<hr>
+</section>
+<section id="dataset-split" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-split">Dataset Split</h2>
+<p>Stratified by class to ensure balanced representation across training, validation, and test sets.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Split</th>
+<th>Images</th>
+<th>Annotations</th>
+<th>CFCBK</th>
+<th>FCBK</th>
+<th>Zigzag</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Train</td>
+<td>47,214</td>
+<td>47,214</td>
+<td>2,032</td>
+<td>34,292</td>
+<td>27,463</td>
+</tr>
+<tr class="even">
+<td>Validation</td>
+<td>15,738</td>
+<td>15,738</td>
+<td>649</td>
+<td>11,339</td>
+<td>9,054</td>
+</tr>
+<tr class="odd">
+<td>Test</td>
+<td>15,738</td>
+<td>15,738</td>
+<td>647</td>
+<td>9,141</td>
+<td>11,312</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td>78,707</td>
+<td>105,933</td>
+<td>3,328</td>
+<td>54,772</td>
+<td>47,829</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="data-downloading-process-and-preprocessing-notebooks" class="level2">
+<h2 class="anchored" data-anchor-id="data-downloading-process-and-preprocessing-notebooks">Data Downloading Process and Preprocessing Notebooks</h2>
+<p>This section summarizes the key scripts used for downloading Sentinel-2 tiles, handling missing data, preprocessing labels, and splitting datasets. All scripts are located in the <a href="https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/data_scripts"><code>data_scripts</code></a> directory.</p>
+<hr>
+<section id="downloading-tile-management" class="level3">
+<h3 class="anchored" data-anchor-id="downloading-tile-management">Downloading &amp; Tile Management</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Script</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/sentinel_tile_bulk_download.py"><code>sentinel_tile_bulk_download.py</code></a></td>
+<td>Downloads Sentinel-2 tiles in bulk based on region and time range.</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/finding_missing_tiles.py"><code>finding_missing_tiles.py</code></a></td>
+<td>Detects tiles that are missing or not downloaded properly.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/run_missing_tiles_download.py"><code>run_missing_tiles_download.py</code></a></td>
+<td>Re-downloads missing or corrupted tiles.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="preprocessing-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="preprocessing-visualization">Preprocessing &amp; Visualization</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Script</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py"><code>tile_processing.py</code></a></td>
+<td>Splits raw Sentinel-2 tiles into fixed-size patches, preprocesses labels, and visualizes patches.</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/label_format_coversion.py"><code>label_format_coversion.py</code></a></td>
+<td>Converts labels into YOLO, DOTA, and YOLO-AA formats.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="dataset-splitting" class="level3">
+<h3 class="anchored" data-anchor-id="dataset-splitting">Dataset Splitting</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Script</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/data_splits.py"><code>data_splits.py</code></a></td>
+<td>Performs stratified train/val/test split based on label distribution.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<blockquote class="blockquote">
+<p><strong>Tip</strong>: Each script is modular and can be executed independently, making the pipeline flexible and customizable.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+</section>
+<section id="unified-setup-guide-one-cell-environment" class="level1">
+<h1>Unified Setup Guide — One-Cell Environment</h1>
+<blockquote class="blockquote">
+<p>A <strong>single Conda environment</strong> for multiple cutting-edge object detection frameworks, enabling reproducible and seamless development.</p>
+</blockquote>
+<hr>
+<section id="frameworks-included" class="level2">
+<h2 class="anchored" data-anchor-id="frameworks-included">Frameworks Included</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Framework</th>
+<th>Description</th>
+<th>Source Link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>MMRotate</strong></td>
+<td>Rotated bounding box detection</td>
+<td><a href="https://github.com/open-mmlab/mmrotate">MMRotate</a></td>
+</tr>
+<tr class="even">
+<td><strong>Ultralytics</strong></td>
+<td>YOLOv8 / YOLOv11-OBB / RT-DETR / YOLOv12</td>
+<td><a href="https://github.com/ultralytics/ultralytics">Ultralytics</a></td>
+</tr>
+<tr class="odd">
+<td><strong>RFDETR</strong></td>
+<td>Custom Transformer-based detector</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025">RFDETR</a></td>
+</tr>
+<tr class="even">
+<td><strong>DETA</strong></td>
+<td>Hugging Face’s DETR variant</td>
+<td><a href="https://huggingface.co/docs/transformers/main/en/model_doc/deta">DETA</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="environment-setup-oncell" class="level2">
+<h2 class="anchored" data-anchor-id="environment-setup-oncell">Environment Setup: <code>oncell</code></h2>
+<p><strong>Requirements:</strong> - Python ≥ 3.8 - CUDA 11.1-enabled GPU</p>
+<p>All frameworks are installed in a single Conda environment named <code>oncell</code>.</p>
+<hr>
+</section>
+<section id="installation-steps" class="level2">
+<h2 class="anchored" data-anchor-id="installation-steps">Installation Steps</h2>
+<!-- <details>
+<summary><strong>Expand for step-by-step instructions</strong></summary> -->
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Create and activate a Conda environment</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> oncell python=3.8 <span class="at">-y</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate oncell</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Install PyTorch with CUDA 11.1</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install torch==1.9.0+cu111 torchvision==0.10.0+cu111 <span class="at">-f</span> https://download.pytorch.org/whl/torch_stable.html</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Install MMCV (for MMRotate)</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install mmcv-full <span class="at">-f</span> https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Remove conflicting packages</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> uninstall <span class="at">-y</span> pycocotools</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Install MMRotate</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/open-mmlab/mmrotate.git</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> mmrotate</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements/build.txt</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-v</span> <span class="at">-e</span> . <span class="at">--user</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Install MMEngine</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-i</span> https://pypi.tuna.tsinghua.edu.cn/simple mmengine</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ex">mim</span> install mmengine</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co"># 7. Install Ultralytics</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install ultralytics</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co"># 8. Install RFDETR</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/rishabh-mondal/NeurIPS_2025.git</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> NeurIPS_2025/rfdetr</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ../..</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co"># 9. Install Hugging Face Transformers (for DETA)</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install transformers</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="traing-the-models" class="level2">
+<h2 class="anchored" data-anchor-id="traing-the-models">Traing the models</h2>
+<section id="model-training-commands" class="level3">
+<h3 class="anchored" data-anchor-id="model-training-commands">Model Training Commands</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 41%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Steps</th>
+<th>Commands</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>MMRotate</strong></td>
+<td>1. Clone repo and copy configs to <code>mmrotate</code> folder – 2. Run distributed training on GPUs</td>
+<td><code>bash -- git clone https://github.com/rishabh-mondal/NeurIPS_2025.git -- cp -r NeurIPS_2025/mmrotate/mmrotate_brickkiln/* mmrotate/ -- cd mmrotate -- bash tools/dist_train.sh configs/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py 0,1,2,3 --</code></td>
+</tr>
+<tr class="even">
+<td><strong>Ultralytics</strong></td>
+<td>Run training script</td>
+<td><code>bash -- cd training_scripts -- chmod +x train.sh -- ./train.sh --</code></td>
+</tr>
+<tr class="odd">
+<td><strong>RFDETR</strong></td>
+<td>Run training with CUDA device 0 and save logs</td>
+<td><code>bash -- cd training_scripts -- export CUDA_VISIBLE_DEVICES=0 -- nohup python rfdetr_train.py &gt; ./logs/rfdetr_large/sentinel_data.log 2&gt;&amp;1 &amp; --</code></td>
+</tr>
+<tr class="even">
+<td><strong>DETA</strong></td>
+<td>Run training with CUDA device 0 and save logs</td>
+<td><code>bash -- cd training_scripts -- export CUDA_VISIBLE_DEVICES=0 -- nohup python deta_train.py &gt; ./logs/deta_large/sentinel_data.log 2&gt;&amp;1 &amp; --</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="model-inference-and-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="model-inference-and-evaluation">🔍 Model Inference and Evaluation</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Task</th>
+<th>Command / Notebook</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>MMRotate</strong></td>
+<td>Inference</td>
+<td><code>bash&lt;br&gt;cd model_inference_evaluation_scripts&lt;br&gt;export CUDA_VISIBLE_DEVICES=0&lt;br&gt;python folder_inference_mine.py&lt;br&gt;</code></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Evaluation</td>
+<td><a href="./mmrotate_eval.ipynb">mmrotate_eval.ipynb</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Ultralytics</strong></td>
+<td>Evaluation</td>
+<td><code>bash&lt;br&gt;cd model_inference_evaluation_scripts&lt;br&gt;export CUDA_VISIBLE_DEVICES=0&lt;br&gt;</code> – <a href="./ultralytics_eval.ipynb">ultralytics_eval.ipynb</a></td>
+</tr>
+<tr class="even">
+<td><strong>RFDETR</strong></td>
+<td>Inference</td>
+<td><code>bash -- cd model_inference_evaluation_scripts -- export CUDA_VISIBLE_DEVICES=0 -- python rfdetr_inference.py --</code></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Evaluation</td>
+<td><code>bash -- python rfdetr_eval.py --</code></td>
+</tr>
+<tr class="even">
+<td><strong>DETA</strong></td>
+<td>Inference</td>
+<td><code>bash -- cd model_inference_evaluation_scripts -- export CUDA_VISIBLE_DEVICES=0 -- python deta_inference.py --</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="model-performance" class="level2">
+<h2 class="anchored" data-anchor-id="model-performance">Model Performance</h2>
+<blockquote class="blockquote">
+<p>🟩 <strong>Highest score</strong> per column is highlighted<br>
+🔽 Click on a category to expand its models<br>
+🏷️ <em>Badges</em> indicate model families for quick reference</p>
+</blockquote>
+<hr>
+<details>
+<summary>
+<strong>Two-Stage Models</strong>
+</summary>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>🏷️ Model</th>
+<th>📄 Paper</th>
+<th>Backbone</th>
+<th>BBox</th>
+<th>CA mAP50</th>
+<th>CFCBK</th>
+<th>FCBK</th>
+<th>Zigzag</th>
+<th>⚙️ Config</th>
+<th>💾 Model</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PSC</td>
+<td>CVPR-23</td>
+<td>Res50</td>
+<td>OBB</td>
+<td>27.41</td>
+<td>0.38</td>
+<td>13.83</td>
+<td>17.03</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/configs/psc/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py">📄 Config</a></td>
+<td><a href="https://drive.google.com/file/d/1yGB0_fcGndLI9uCf678tE3OiHAYi3jds/view?usp=drive_link">🔗 Model</a></td>
+</tr>
+<tr class="even">
+<td>H2RBox</td>
+<td>ICLR-23</td>
+<td>Res50</td>
+<td>OBB</td>
+<td>47.01</td>
+<td>24.93</td>
+<td>30.27</td>
+<td>31.02</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/h2rbox-le90_r50_fpn_adamw-1x_dota.py">Config</a></td>
+<td><a href="https://drive.google.com/file/d/18Flaofo6yeTioR_1Xo6T7Hnfh94al9f9/view?usp=drive_link">Model</a></td>
+</tr>
+<tr class="odd">
+<td>🟩 <strong>RoI Transformer</strong></td>
+<td>CVPR-19</td>
+<td>Swin-T</td>
+<td>OBB</td>
+<td>🟩 <strong>61.65</strong></td>
+<td>🟩 <strong>45.31</strong></td>
+<td>🟩 <strong>43.75</strong></td>
+<td>🟩 <strong>47.46</strong></td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/roi_trans_r50_fpn_1x_brickkiln_le90.py">Config</a></td>
+<td><a href="https://drive.google.com/file/d/1suX01Id1UR6QD19EZtx8WcM5jKgNLfGq/view?usp=drive_link">Model</a></td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr>
+<details>
+<summary>
+<strong>One-Stage Models</strong>
+</summary>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>🏷️ Model</th>
+<th>📄 Paper</th>
+<th>Backbone</th>
+<th>BBox</th>
+<th>CA mAP50</th>
+<th>CFCBK</th>
+<th>FCBK</th>
+<th>Zigzag</th>
+<th>⚙️ Config</th>
+<th>💾 Model</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rotated FCOS</td>
+<td>ICCV-19</td>
+<td>Res50</td>
+<td>OBB</td>
+<td>15.62</td>
+<td>12.72</td>
+<td>8.48</td>
+<td>9.99</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/rotated-fcos-le90_r50_fpn_1x_dota.py">Config</a></td>
+<td><a href="https://drive.google.com/file/d/14VM3UybLOgL46Q__cqdWcxGV5_HU9nqI/view?usp=drive_link">Model</a></td>
+</tr>
+<tr class="even">
+<td>DCFL</td>
+<td>CVPR-23</td>
+<td>Res50</td>
+<td>OBB</td>
+<td>16.01</td>
+<td>9.07</td>
+<td>6.51</td>
+<td>12.97</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/dcfl-le90_r50_1x_dota.py">Config</a></td>
+<td><a href="https://drive.google.com/file/d/1Jnr-V3gK9J3Z20u3R0FvCxZBUt3oJcW0/view?usp=drive_link">Model</a></td>
+</tr>
+<tr class="odd">
+<td>CSL</td>
+<td>ECCV-20</td>
+<td>Res50</td>
+<td>OBB</td>
+<td>16.48</td>
+<td>0.18</td>
+<td>9.31</td>
+<td>8.37</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/rotated-retinanet-rbox-le90_r50_fpn_csl-gaussian_amp-1x_dota.py">Config</a></td>
+<td><a href="https://drive.google.com/file/d/15yU8fWolXVYr2J_opp1EP52md_-vGu5c/view?usp=drive_link">Model</a></td>
+</tr>
+<tr class="even">
+<td>Rotated RetinaNet</td>
+<td>ICCV-17</td>
+<td>Res50</td>
+<td>OBB</td>
+<td>34.37</td>
+<td>2.81</td>
+<td>17.27</td>
+<td>22.55</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/rotated_retinanet_obb_r50_fpn_1x_brickkiln_le90.py">Config</a></td>
+<td><a href="https://drive.google.com/file/d/1PXDIminRkZ2kUdhiVxgxnXu4A59DbBze/view?usp=drive_link">Model</a></td>
+</tr>
+<tr class="odd">
+<td>Rotated ATSS</td>
+<td>CVPR-20</td>
+<td>Res50</td>
+<td>OBB</td>
+<td>38.79</td>
+<td>18.68</td>
+<td>20.49</td>
+<td>25.27</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/rotated-atss-le90_r50_fpn_1x_dota.py">Config</a></td>
+<td><a href="https://drive.google.com/file/d/1UhXnogbNmree2PYZ5elGPHdie68D_oXb/view?usp=drive_link">Model</a></td>
+</tr>
+<tr class="even">
+<td>GWD</td>
+<td>ICML-21</td>
+<td>Res50</td>
+<td>OBB</td>
+<td>41.70</td>
+<td>0.17</td>
+<td>22.21</td>
+<td>25.12</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/rotated-retinanet-rbox-le90_r50_fpn_gwd_1x_dota.py">Config</a></td>
+<td><a href="https://drive.google.com/file/d/1UhXnogbNmree2PYZ5elGPHdie68D_oXb/view?usp=drive_link">Model</a></td>
+</tr>
+<tr class="odd">
+<td>R³Det</td>
+<td>AAAI-21</td>
+<td>Res50</td>
+<td>OBB</td>
+<td>43.70</td>
+<td>0.17</td>
+<td>24.89</td>
+<td>28.54</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/r3det_r50_fpn_1x_brickkiln_oc.py">Config</a></td>
+<td><a href="https://drive.google.com/file/d/1zBHILdiQ8PeRsjwilFhZd3ZAepL-_5FN/view?usp=drive_link">Model</a></td>
+</tr>
+<tr class="even">
+<td>S²A-Net</td>
+<td>TGRS-21</td>
+<td>Res50</td>
+<td>OBB</td>
+<td>54.28</td>
+<td>32.10</td>
+<td>32.21</td>
+<td>39.85</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/s2anet-le90_r50_fpn_1x_dota.py">Config</a></td>
+<td><a href="https://drive.google.com/file/d/1XMV1EwWHC3M8iuQZuBn6w71m1NLKl986/view?usp=drive_link">Model</a></td>
+</tr>
+<tr class="odd">
+<td>ConvNeXt</td>
+<td>CVPR-22</td>
+<td>Res50</td>
+<td>OBB</td>
+<td>66.19</td>
+<td>34.33</td>
+<td>41.84</td>
+<td>43.53</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/mmrotate_brickkiln/configs/rotated-retinanet-rbox-le90_convnext-tiny_fpn_kld-stable_adamw-1x_dota.py">Config</a></td>
+<td><a href="https://drive.google.com/file/d/1709IlyFYj5OGEAh_ZhgU1F-iSgRbxXRI/view?usp=drive_link">Model</a></td>
+</tr>
+<tr class="even">
+<td>YOLOv11L-OBB</td>
+<td>arXiv-24</td>
+<td>CSPDr53</td>
+<td>OBB</td>
+<td>75.20</td>
+<td>58.57</td>
+<td>55.43</td>
+<td>53.90</td>
+<td><a href="#">Config</a></td>
+<td><a href="#">Model</a></td>
+</tr>
+<tr class="odd">
+<td>YOLOv12L</td>
+<td>arXiv-25</td>
+<td>CSPDr53</td>
+<td>AA</td>
+<td>79.54</td>
+<td>58.00</td>
+<td>60.19</td>
+<td>54.83</td>
+<td><a href="#">Config</a></td>
+<td><a href="#">Model</a></td>
+</tr>
+<tr class="even">
+<td>🟩 <strong>YOLOv8L-WORLDv2</strong></td>
+<td>CVPR-24</td>
+<td>CSPDr53</td>
+<td>AA</td>
+<td>🟩 <strong>80.74</strong></td>
+<td>57.78</td>
+<td>🟩 <strong>61.28</strong></td>
+<td>🟩 <strong>56.89</strong></td>
+<td><a href="#">Config</a></td>
+<td><a href="#">Model</a></td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr>
+<details>
+<summary>
+<strong>DETR-Based Models</strong>
+</summary>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>🏷️ Model</th>
+<th>📄 Paper</th>
+<th>Backbone</th>
+<th>BBox</th>
+<th>CA mAP50</th>
+<th>CFCBK</th>
+<th>FCBK</th>
+<th>Zigzag</th>
+<th>⚙️ Config</th>
+<th>💾 Model</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DETA</td>
+<td>ICCV-23</td>
+<td>Res50</td>
+<td>AA</td>
+<td>65.34</td>
+<td>44.01</td>
+<td>47.56</td>
+<td>55.21</td>
+<td><a href="#">Config</a></td>
+<td><a href="#">Model</a></td>
+</tr>
+<tr class="even">
+<td>🟩 <strong>RFDETR</strong></td>
+<td>arXiv-25</td>
+<td>Dinov2</td>
+<td>AA</td>
+<td>79.64</td>
+<td>🟩 <strong>64.26</strong></td>
+<td>63.68</td>
+<td>64.25</td>
+<td><a href="#">Config</a></td>
+<td><a href="#">Model</a></td>
+</tr>
+<tr class="odd">
+<td>🟩 <strong>RTDETR</strong></td>
+<td>CVPR-24</td>
+<td>Res101</td>
+<td>AA</td>
+<td>🟩 <strong>87.53</strong></td>
+<td>63.03</td>
+<td>🟩 <strong>68.60</strong></td>
+<td>🟩 <strong>64.30</strong></td>
+<td><a href="#">Config</a></td>
+<td><a href="#">Model</a></td>
+</tr>
+</tbody>
+</table>
+</details>
+</section>
+<section id="citation-coming-soon" class="level2">
+<h2 class="anchored" data-anchor-id="citation-coming-soon">Citation (Coming Soon)</h2>
+</section>
+<section id="contributing" class="level2">
+<h2 class="anchored" data-anchor-id="contributing">Contributing</h2>
+<p>Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes. For questions or collaborations, please contact <a href="mailto:rishabh.mondal@iitgn.ac.in">Rishabh Mondal</a>.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
