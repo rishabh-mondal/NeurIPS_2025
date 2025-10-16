@@ -247,6 +247,22 @@ pip install transformers
 | 🟩 **RTDETR**   | CVPR-24   | Res101      | AA      | 🟩 **87.53** | 63.03    | 🟩 **68.60** | 🟩 **64.30** | [Config](#) | [Model](#) |
 
 </details>
+<details>
+<summary><strong>Foundation Models</strong></summary>
+
+| Model       | Paper    | Backbone | BBox | CA mAP50 | CFCBK | FCBK  | Zigzag | Config | Model |
+|-------------|----------|----------|------|----------|-------|-------|--------|--------|-------|
+| SatMAE++    | CVPR 2024| ViT-L    | AA   | 36.63    | 27.43 | 21.01 | 29.74  | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/satmae++) | [Model](https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/EelwlnYCyqdNumi0bFEDyusBVDoyWTSfCTOCFVrHc55nqg?e=09MwA5) |
+| CROMA       | NeurIPS 2023 | ViT-B | AA   | 63.89    | 17.69 | 44.66 | 56.40  | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/croma) | [Model](https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/EbjNCZt_0-BFhXvsZyqYcMYBtuARb2uGhFZYIdY_hDRS7Q?e=S8Vn6b) |
+| Prithvi     | arXiv 2023| ViT-L   | AA   | 59.26    | 16.86 | 40.63 | 52.77  | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/prithvi) | [Model](https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/EW7PCdMxTXtKnLOmEQWX9eMBugbZfVbwTEKjFiLZGRJbDA?e=pasBEG) |
+| Panopticon  | CVPR 2025| ViT-B    | AA   | 74.87    | 43.13 | 50.61 | 55.11  | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/panopticon/) | [Model](https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/EdRmDub80BFDqNRFufxfuBsBXFR4DRqD2Uh7bL6UM6dS5A?e=JYIlLh) |
+| SatMAE      | NeurIPS 2022 | ViT-L| AA   | 76.36    | 40.65 | 50.72 | 56.03  | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/satmae) | [Model](https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/Efg4C-N1gttMkN02WeTeRtABCvkQB7mh7tfodyBzCXpvHw?e=BfVYit) |
+| Copernicus  | ICCV 2025| ViT-B    | AA   | 77.22    | 61.09 | 59.73 | 67.78  | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/copernicus) | [Model](https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/Ea0J6W6rMEdAhm3NfG5mZXIBDpgFAtfhBTxaY580bstxwg?e=mNmSq4) |
+| Scale MAE   | ICCV 2023| ViT-L    | AA   | 78.43    | 52.10 | 60.77 | 65.18  | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/scalemae) | [Model](https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/EQfBet9wS9hFmpMjTMABvQEBZThps8B_8w_M9tjSzX19kA?e=qRuPBI) |
+| Galileo     | ICML 2025| ViT-B    | AA   | 86.66    | 72.02 | 69.81 | 72.19  | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/galileo) | [Model](https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/EdgqIJyAerVMvqXkfE2e-woB-RMN16nYuJQhFKUzeTXmog?e=PMKR7E) |
+| TerraMind   | ICCV 2025| ViT-B    | AA   | 86.91    | 69.04 | 70.54 | 75.55  | [Config](https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/terramind) | [Model](https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/ETCfRDjM-7tCnCtFtKxoXmsBm5-e8bTkw1O0V1v3nzIZRg?e=79N2bh) |
+
+</details>
 
 
 
