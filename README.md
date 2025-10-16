@@ -1,22 +1,65 @@
-# SentinelKilnDB  
-### A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery  
-**[NeurIPS 2025 Submission]**
+<div align="center">
+
+# 🛰️ **SentinelKilnDB**  
+### *A Large-Scale Dataset and Benchmark for Oriented Bounding Box (OBB) Brick Kiln Detection in South Asia Using Satellite Imagery*  
+
+**Conference:**  🎓 *NeurIPS 2025 – Datasets & Benchmarks Track*
 
 ---
 
-## Dataset Overview — *SentinelKilnDB*
+<a href="https://neurips.cc/virtual/2025/poster/121530" target="_blank">
+  <img src="https://img.shields.io/badge/Read%20Paper-2ecc71?style=for-the-badge&logo=readme&logoColor=white" alt="Read Paper Button">
+</a>
+&nbsp;&nbsp;
+<a href="https://sustainability-lab.github.io/sentinelkilndb/" target="_blank">
+  <img src="https://img.shields.io/badge/Project%20Page-1e90ff?style=for-the-badge&logo=github&logoColor=white" alt="Project Page Button">
+</a>
+&nbsp;&nbsp;
+<a href="https://www.kaggle.com/datasets/rishabhsnip/sentinelkiln-dataset" target="_blank">
+  <img src="https://img.shields.io/badge/Dataset-f39c12?style=for-the-badge&logo=kaggle&logoColor=white" alt="Dataset Button">
+</a>
 
-| Attribute        | Details                                 |
-|------------------|------------------------------------------|
-| **Dataset**     | SentinelKilnDB                          |
-| **Size**        | ~4.00 GB                                |
-| **Images**      | 78,707 RGB (10m resolution)             |
-| **Satellite**    | Sentinel-2                              |
-| **Time Period**  | Sept 2023 – Feb 2024                    |
-| **Annotations**  | 105,933 Oriented Bounding Boxes (OBBs) |
-| **Classes**      | 3 — CFCBK, FCBK, Zigzag                 |
-| **Format**       | DOTA, YOLO-OBB, YOLO-AA                |
-| **License**      | CC BY-NC-SA 4.0                         |
+---
+
+</div>
+
+### Overview
+
+**SentinelKilnDB** is a comprehensive benchmark dataset for detecting **brick kilns**—major unorganized emission sources—across **South Asia** using **Sentinel-2 multispectral satellite imagery**.  
+It provides oriented bounding box (OBB) annotations for diverse kiln types (CFCBK, FCBK, Zigzag), enabling robust and policy-relevant model development for large-scale environmental monitoring.
+
+---
+
+<div align="center">
+
+## 🗺️ **Dataset Overview — SentinelKilnDB**
+
+</div>
+
+<table align="center">
+<tr>
+<th align="left">📂 Attribute</th>
+<th align="left">🧭 Details</th>
+</tr>
+
+<tr><td><b>Dataset</b></td><td>SentinelKilnDB</td></tr>
+<tr><td><b>Size</b></td><td>~4.00 GB</td></tr>
+<tr><td><b>Images</b></td><td>114,300 RGB tiles (10 m resolution)</td></tr>
+<tr><td><b>Satellite</b></td><td>Sentinel-2 (MSI)</td></tr>
+<tr><td><b>Time Period</b></td><td>September 2023 – February 2024</td></tr>
+<tr><td><b>Annotations</b></td><td>97,648 Oriented Bounding Boxes (OBBs)</td></tr>
+<tr><td><b>Classes</b></td><td>3 – CFCBK, FCBK, Zigzag</td></tr>
+<tr><td><b>Format</b></td><td>DOTA / YOLO-OBB / YOLO-AA</td></tr>
+<tr><td><b>License</b></td><td>CC BY-NC-SA 4.0</td></tr>
+</table>
+
+---
+
+<!-- <div align="center">
+<a href="https://www.kaggle.com/datasets/rishabhsnip/sentinelkiln-dataset" target="_blank">
+  <img src="https://img.shields.io/badge/Download%20Dataset-f39c12?style=for-the-badge&logo=kaggle&logoColor=white" alt="Download Dataset">
+</a>
+</div> -->
 
 ---
 ---
@@ -44,16 +87,14 @@
 
 ## Dataset Split
 
-Stratified by class to ensure balanced representation across training, validation, and test sets.
+Class wise stratified split for balanced representation.
 
-| Split       | Images  | Annotations | CFCBK | FCBK  | Zigzag |
-|-------------|---------|-------------|-------|-------|--------|
-| Train       | 47,214  | 47,214      | 2,032 | 34,292| 27,463 |
-| Validation  | 15,738  | 15,738      |   649 | 11,339|  9,054 |
-| Test        | 15,738  | 15,738      |   647 |  9,141| 11,312 |
-| **Total**   | 78,707  | 105,933     | 3,328 | 54,772| 47,829 |
-
----
+| Split | Images (.png) | Label files (.txt) | No. of BBoxes |
+|-------|---------------:|-------------------:|---------------:|
+| Train | 71,856 | 47,214 | 63,787 |
+| Val | 23,952 | 15,738 | 21,042 |
+| Test | 18,492 | 10,278 | 12,819 |
+| **Total** | **114,300** | **73,239** | **97,648** |
 
 
 ## Data Downloading Process and Preprocessing Notebooks
@@ -78,14 +119,6 @@ This section summarizes the key scripts used for downloading Sentinel-2 tiles, h
 |--------|-------------|
 | [`tile_processing.py`](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/tile_processing.py) | Splits raw Sentinel-2 tiles into fixed-size patches, preprocesses labels, and visualizes patches. |
 | [`label_format_coversion.py`](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/label_format_coversion.py) | Converts labels into YOLO, DOTA, and YOLO-AA formats. |
-
----
-
-### Dataset Splitting
-
-| Script | Description |
-|--------|-------------|
-| [`data_splits.py`](https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/data_splits.py) | Performs stratified train/val/test split based on label distribution. |
 
 ---
 
@@ -266,7 +299,11 @@ pip install transformers
 
 
 
-## Citation (Coming Soon)
+## Citation 
+
+@inproceedings{mondal2025sentinelkilndb, title={SentinelKilnDB: A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery}, author={Rishabh Mondal and Jeet Parab and Heer Kubadia and Shataxi Dubey and Shardul Junagade and Zeel B. Patel and Nipun Batra}, booktitle={The Thirty-Ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track}, year={2025}, url={https://openreview.net/forum?id=efGzsxVSEC}
+
+}
 
 
 ## Contributing

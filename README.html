@@ -80,62 +80,113 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="sentinelkilndb" class="level1">
-<h1>SentinelKilnDB</h1>
-<section id="a-large-scale-dataset-and-benchmark-for-obb-brick-kiln-detection-in-south-asia-using-satellite-imagery" class="level3">
-<h3 class="anchored" data-anchor-id="a-large-scale-dataset-and-benchmark-for-obb-brick-kiln-detection-in-south-asia-using-satellite-imagery">A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery</h3>
-<p><strong>[NeurIPS 2025 Submission]</strong></p>
+<section id="sentinelkilndb" class="level1" data-align="center">
+<h1>🛰️ <strong>SentinelKilnDB</strong></h1>
+<section id="a-large-scale-dataset-and-benchmark-for-oriented-bounding-box-obb-brick-kiln-detection-in-south-asia-using-satellite-imagery" class="level3">
+<h3 class="anchored" data-anchor-id="a-large-scale-dataset-and-benchmark-for-oriented-bounding-box-obb-brick-kiln-detection-in-south-asia-using-satellite-imagery"><em>A Large-Scale Dataset and Benchmark for Oriented Bounding Box (OBB) Brick Kiln Detection in South Asia Using Satellite Imagery</em></h3>
+<p><strong>Conference:</strong> 🎓 <em>NeurIPS 2025 – Datasets &amp; Benchmarks Track</em></p>
+<hr>
+<p><a href="https://neurips.cc/virtual/2025/poster/121530" target="_blank"> <img src="https://img.shields.io/badge/Read%20Paper-2ecc71?style=for-the-badge&amp;logo=readme&amp;logoColor=white" alt="Read Paper Button"> </a> &nbsp;&nbsp; <a href="https://sustainability-lab.github.io/sentinelkilndb/" target="_blank"> <img src="https://img.shields.io/badge/Project%20Page-1e90ff?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Project Page Button"> </a> &nbsp;&nbsp; <a href="https://www.kaggle.com/datasets/rishabhsnip/sentinelkiln-dataset" target="_blank"> <img src="https://img.shields.io/badge/Dataset-f39c12?style=for-the-badge&amp;logo=kaggle&amp;logoColor=white" alt="Dataset Button"> </a></p>
 <hr>
 </section>
-<section id="dataset-overview-sentinelkilndb" class="level2">
-<h2 class="anchored" data-anchor-id="dataset-overview-sentinelkilndb">Dataset Overview — <em>SentinelKilnDB</em></h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Dataset</strong></td>
-<td>SentinelKilnDB</td>
-</tr>
-<tr class="even">
-<td><strong>Size</strong></td>
-<td>~4.00 GB</td>
-</tr>
-<tr class="odd">
-<td><strong>Images</strong></td>
-<td>78,707 RGB (10m resolution)</td>
-</tr>
-<tr class="even">
-<td><strong>Satellite</strong></td>
-<td>Sentinel-2</td>
-</tr>
-<tr class="odd">
-<td><strong>Time Period</strong></td>
-<td>Sept 2023 – Feb 2024</td>
-</tr>
-<tr class="even">
-<td><strong>Annotations</strong></td>
-<td>105,933 Oriented Bounding Boxes (OBBs)</td>
-</tr>
-<tr class="odd">
-<td><strong>Classes</strong></td>
-<td>3 — CFCBK, FCBK, Zigzag</td>
-</tr>
-<tr class="even">
-<td><strong>Format</strong></td>
-<td>DOTA, YOLO-OBB, YOLO-AA</td>
-</tr>
-<tr class="odd">
-<td><strong>License</strong></td>
-<td>CC BY-NC-SA 4.0</td>
-</tr>
-</tbody>
-</table>
 </section>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p><strong>SentinelKilnDB</strong> is a comprehensive benchmark dataset for detecting <strong>brick kilns</strong>—major unorganized emission sources—across <strong>South Asia</strong> using <strong>Sentinel-2 multispectral satellite imagery</strong>.<br>
+It provides oriented bounding box (OBB) annotations for diverse kiln types (CFCBK, FCBK, Zigzag), enabling robust and policy-relevant model development for large-scale environmental monitoring.</p>
+<hr>
+</section>
+<section id="dataset-overview-sentinelkilndb" class="level2" data-align="center">
+<h2 class="anchored" data-anchor-id="dataset-overview-sentinelkilndb">🗺️ <strong>Dataset Overview — SentinelKilnDB</strong></h2>
+</section>
+<table align="center">
+<tbody><tr>
+<th align="left">
+📂 Attribute
+</th>
+<th align="left">
+🧭 Details
+</th>
+</tr>
+<tr>
+<td>
+<b>Dataset</b>
+</td>
+<td>
+SentinelKilnDB
+</td>
+</tr>
+<tr>
+<td>
+<b>Size</b>
+</td>
+<td>
+~4.00 GB
+</td>
+</tr>
+<tr>
+<td>
+<b>Images</b>
+</td>
+<td>
+114,300 RGB tiles (10 m resolution)
+</td>
+</tr>
+<tr>
+<td>
+<b>Satellite</b>
+</td>
+<td>
+Sentinel-2 (MSI)
+</td>
+</tr>
+<tr>
+<td>
+<b>Time Period</b>
+</td>
+<td>
+September 2023 – February 2024
+</td>
+</tr>
+<tr>
+<td>
+<b>Annotations</b>
+</td>
+<td>
+97,648 Oriented Bounding Boxes (OBBs)
+</td>
+</tr>
+<tr>
+<td>
+<b>Classes</b>
+</td>
+<td>
+3 – CFCBK, FCBK, Zigzag
+</td>
+</tr>
+<tr>
+<td>
+<b>Format</b>
+</td>
+<td>
+DOTA / YOLO-OBB / YOLO-AA
+</td>
+</tr>
+<tr>
+<td>
+<b>License</b>
+</td>
+<td>
+CC BY-NC-SA 4.0
+</td>
+</tr>
+</tbody></table>
+<hr>
+<!-- <div align="center">
+<a href="https://www.kaggle.com/datasets/rishabhsnip/sentinelkiln-dataset" target="_blank">
+  <img src="https://img.shields.io/badge/Download%20Dataset-f39c12?style=for-the-badge&logo=kaggle&logoColor=white" alt="Download Dataset">
+</a>
+</div> -->
 <section id="sample-images" class="level2">
 <h2 class="anchored" data-anchor-id="sample-images">Sample Images</h2>
 <table>
@@ -155,54 +206,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="dataset-split" class="level2">
 <h2 class="anchored" data-anchor-id="dataset-split">Dataset Split</h2>
-<p>Stratified by class to ensure balanced representation across training, validation, and test sets.</p>
+<p>Class wise stratified split for balanced representation.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Split</th>
-<th>Images</th>
-<th>Annotations</th>
-<th>CFCBK</th>
-<th>FCBK</th>
-<th>Zigzag</th>
+<th style="text-align: right;">Images (.png)</th>
+<th style="text-align: right;">Label files (.txt)</th>
+<th style="text-align: right;">No.&nbsp;of BBoxes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Train</td>
-<td>47,214</td>
-<td>47,214</td>
-<td>2,032</td>
-<td>34,292</td>
-<td>27,463</td>
+<td style="text-align: right;">71,856</td>
+<td style="text-align: right;">47,214</td>
+<td style="text-align: right;">63,787</td>
 </tr>
 <tr class="even">
-<td>Validation</td>
-<td>15,738</td>
-<td>15,738</td>
-<td>649</td>
-<td>11,339</td>
-<td>9,054</td>
+<td>Val</td>
+<td style="text-align: right;">23,952</td>
+<td style="text-align: right;">15,738</td>
+<td style="text-align: right;">21,042</td>
 </tr>
 <tr class="odd">
 <td>Test</td>
-<td>15,738</td>
-<td>15,738</td>
-<td>647</td>
-<td>9,141</td>
-<td>11,312</td>
+<td style="text-align: right;">18,492</td>
+<td style="text-align: right;">10,278</td>
+<td style="text-align: right;">12,819</td>
 </tr>
 <tr class="even">
 <td><strong>Total</strong></td>
-<td>78,707</td>
-<td>105,933</td>
-<td>3,328</td>
-<td>54,772</td>
-<td>47,829</td>
+<td style="text-align: right;"><strong>114,300</strong></td>
+<td style="text-align: right;"><strong>73,239</strong></td>
+<td style="text-align: right;"><strong>97,648</strong></td>
 </tr>
 </tbody>
 </table>
-<hr>
 </section>
 <section id="data-downloading-process-and-preprocessing-notebooks" class="level2">
 <h2 class="anchored" data-anchor-id="data-downloading-process-and-preprocessing-notebooks">Data Downloading Process and Preprocessing Notebooks</h2>
@@ -255,29 +295,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <hr>
-</section>
-<section id="dataset-splitting" class="level3">
-<h3 class="anchored" data-anchor-id="dataset-splitting">Dataset Splitting</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Script</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/blob/main/data_scripts/data_splits.py"><code>data_splits.py</code></a></td>
-<td>Performs stratified train/val/test split based on label distribution.</td>
-</tr>
-</tbody>
-</table>
-<hr>
 <blockquote class="blockquote">
 <p><strong>Tip</strong>: Each script is modular and can be executed independently, making the pipeline flexible and customizable.</p>
 </blockquote>
 <hr>
-</section>
 </section>
 </section>
 <section id="unified-setup-guide-one-cell-environment" class="level1">
@@ -388,23 +409,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td><strong>MMRotate</strong></td>
-<td>1. Clone repo and copy configs to <code>mmrotate</code> folder – 2. Run distributed training on GPUs</td>
-<td><code>bash -- git clone https://github.com/rishabh-mondal/NeurIPS_2025.git -- cp -r NeurIPS_2025/mmrotate/mmrotate_brickkiln/* mmrotate/ -- cd mmrotate -- bash tools/dist_train.sh configs/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py 0,1,2,3 --</code></td>
+<td>1. Clone repo and copy configs to <code>mmrotate</code> folder<br>2. Run distributed training on GPUs</td>
+<td><code>bash&lt;br&gt;git clone https://github.com/rishabh-mondal/NeurIPS_2025.git&lt;br&gt;cp -r NeurIPS_2025/mmrotate/mmrotate_brickkiln/* mmrotate/&lt;br&gt;cd mmrotate&lt;br&gt;bash tools/dist_train.sh configs/rotated-retinanet-rbox-le90_r50_fpn_psc-dual_amp-1x_dota.py 0,1,2,3&lt;br&gt;</code></td>
 </tr>
 <tr class="even">
 <td><strong>Ultralytics</strong></td>
 <td>Run training script</td>
-<td><code>bash -- cd training_scripts -- chmod +x train.sh -- ./train.sh --</code></td>
+<td><code>bash&lt;br&gt;cd training_scripts&lt;br&gt;chmod +x train.sh&lt;br&gt;./train.sh&lt;br&gt;</code></td>
 </tr>
 <tr class="odd">
 <td><strong>RFDETR</strong></td>
 <td>Run training with CUDA device 0 and save logs</td>
-<td><code>bash -- cd training_scripts -- export CUDA_VISIBLE_DEVICES=0 -- nohup python rfdetr_train.py &gt; ./logs/rfdetr_large/sentinel_data.log 2&gt;&amp;1 &amp; --</code></td>
+<td><code>bash&lt;br&gt;cd training_scripts&lt;br&gt;export CUDA_VISIBLE_DEVICES=0&lt;br&gt;nohup python rfdetr_train.py &gt; ./logs/rfdetr_large/sentinel_data.log 2&gt;&amp;1 &amp;&lt;br&gt;</code></td>
 </tr>
 <tr class="even">
 <td><strong>DETA</strong></td>
 <td>Run training with CUDA device 0 and save logs</td>
-<td><code>bash -- cd training_scripts -- export CUDA_VISIBLE_DEVICES=0 -- nohup python deta_train.py &gt; ./logs/deta_large/sentinel_data.log 2&gt;&amp;1 &amp; --</code></td>
+<td><code>bash&lt;br&gt;cd training_scripts&lt;br&gt;export CUDA_VISIBLE_DEVICES=0&lt;br&gt;nohup python deta_train.py &gt; ./logs/deta_large/sentinel_data.log 2&gt;&amp;1 &amp;&lt;br&gt;</code></td>
 </tr>
 </tbody>
 </table>
@@ -435,22 +456,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tr class="odd">
 <td><strong>Ultralytics</strong></td>
 <td>Evaluation</td>
-<td><code>bash&lt;br&gt;cd model_inference_evaluation_scripts&lt;br&gt;export CUDA_VISIBLE_DEVICES=0&lt;br&gt;</code> – <a href="./ultralytics_eval.ipynb">ultralytics_eval.ipynb</a></td>
+<td><code>bash&lt;br&gt;cd model_inference_evaluation_scripts&lt;br&gt;export CUDA_VISIBLE_DEVICES=0&lt;br&gt;</code><br><a href="./ultralytics_eval.ipynb">ultralytics_eval.ipynb</a></td>
 </tr>
 <tr class="even">
 <td><strong>RFDETR</strong></td>
 <td>Inference</td>
-<td><code>bash -- cd model_inference_evaluation_scripts -- export CUDA_VISIBLE_DEVICES=0 -- python rfdetr_inference.py --</code></td>
+<td><code>bash&lt;br&gt;cd model_inference_evaluation_scripts&lt;br&gt;export CUDA_VISIBLE_DEVICES=0&lt;br&gt;python rfdetr_inference.py&lt;br&gt;</code></td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>Evaluation</td>
-<td><code>bash -- python rfdetr_eval.py --</code></td>
+<td><code>bash&lt;br&gt;python rfdetr_eval.py&lt;br&gt;</code></td>
 </tr>
 <tr class="even">
 <td><strong>DETA</strong></td>
 <td>Inference</td>
-<td><code>bash -- cd model_inference_evaluation_scripts -- export CUDA_VISIBLE_DEVICES=0 -- python deta_inference.py --</code></td>
+<td><code>bash&lt;br&gt;cd model_inference_evaluation_scripts&lt;br&gt;export CUDA_VISIBLE_DEVICES=0&lt;br&gt;python deta_inference.py&lt;br&gt;</code></td>
 </tr>
 </tbody>
 </table>
@@ -751,9 +772,142 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </details>
+<details>
+<summary>
+<strong>Foundation Models</strong>
+</summary>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Paper</th>
+<th>Backbone</th>
+<th>BBox</th>
+<th>CA mAP50</th>
+<th>CFCBK</th>
+<th>FCBK</th>
+<th>Zigzag</th>
+<th>Config</th>
+<th>Model</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SatMAE++</td>
+<td>CVPR 2024</td>
+<td>ViT-L</td>
+<td>AA</td>
+<td>36.63</td>
+<td>27.43</td>
+<td>21.01</td>
+<td>29.74</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/satmae++">Config</a></td>
+<td><a href="https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/EelwlnYCyqdNumi0bFEDyusBVDoyWTSfCTOCFVrHc55nqg?e=09MwA5">Model</a></td>
+</tr>
+<tr class="even">
+<td>CROMA</td>
+<td>NeurIPS 2023</td>
+<td>ViT-B</td>
+<td>AA</td>
+<td>63.89</td>
+<td>17.69</td>
+<td>44.66</td>
+<td>56.40</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/croma">Config</a></td>
+<td><a href="https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/EbjNCZt_0-BFhXvsZyqYcMYBtuARb2uGhFZYIdY_hDRS7Q?e=S8Vn6b">Model</a></td>
+</tr>
+<tr class="odd">
+<td>Prithvi</td>
+<td>arXiv 2023</td>
+<td>ViT-L</td>
+<td>AA</td>
+<td>59.26</td>
+<td>16.86</td>
+<td>40.63</td>
+<td>52.77</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/prithvi">Config</a></td>
+<td><a href="https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/EW7PCdMxTXtKnLOmEQWX9eMBugbZfVbwTEKjFiLZGRJbDA?e=pasBEG">Model</a></td>
+</tr>
+<tr class="even">
+<td>Panopticon</td>
+<td>CVPR 2025</td>
+<td>ViT-B</td>
+<td>AA</td>
+<td>74.87</td>
+<td>43.13</td>
+<td>50.61</td>
+<td>55.11</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/panopticon/">Config</a></td>
+<td><a href="https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/EdRmDub80BFDqNRFufxfuBsBXFR4DRqD2Uh7bL6UM6dS5A?e=JYIlLh">Model</a></td>
+</tr>
+<tr class="odd">
+<td>SatMAE</td>
+<td>NeurIPS 2022</td>
+<td>ViT-L</td>
+<td>AA</td>
+<td>76.36</td>
+<td>40.65</td>
+<td>50.72</td>
+<td>56.03</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/satmae">Config</a></td>
+<td><a href="https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/Efg4C-N1gttMkN02WeTeRtABCvkQB7mh7tfodyBzCXpvHw?e=BfVYit">Model</a></td>
+</tr>
+<tr class="even">
+<td>Copernicus</td>
+<td>ICCV 2025</td>
+<td>ViT-B</td>
+<td>AA</td>
+<td>77.22</td>
+<td>61.09</td>
+<td>59.73</td>
+<td>67.78</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/copernicus">Config</a></td>
+<td><a href="https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/Ea0J6W6rMEdAhm3NfG5mZXIBDpgFAtfhBTxaY580bstxwg?e=mNmSq4">Model</a></td>
+</tr>
+<tr class="odd">
+<td>Scale MAE</td>
+<td>ICCV 2023</td>
+<td>ViT-L</td>
+<td>AA</td>
+<td>78.43</td>
+<td>52.10</td>
+<td>60.77</td>
+<td>65.18</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/scalemae">Config</a></td>
+<td><a href="https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/EQfBet9wS9hFmpMjTMABvQEBZThps8B_8w_M9tjSzX19kA?e=qRuPBI">Model</a></td>
+</tr>
+<tr class="even">
+<td>Galileo</td>
+<td>ICML 2025</td>
+<td>ViT-B</td>
+<td>AA</td>
+<td>86.66</td>
+<td>72.02</td>
+<td>69.81</td>
+<td>72.19</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/galileo">Config</a></td>
+<td><a href="https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/EdgqIJyAerVMvqXkfE2e-woB-RMN16nYuJQhFKUzeTXmog?e=PMKR7E">Model</a></td>
+</tr>
+<tr class="odd">
+<td>TerraMind</td>
+<td>ICCV 2025</td>
+<td>ViT-B</td>
+<td>AA</td>
+<td>86.91</td>
+<td>69.04</td>
+<td>70.54</td>
+<td>75.55</td>
+<td><a href="https://github.com/rishabh-mondal/NeurIPS_2025/tree/main/foundation_model/terramind">Config</a></td>
+<td><a href="https://iitgnacin-my.sharepoint.com/:u:/g/personal/23310002_iitgn_ac_in/ETCfRDjM-7tCnCtFtKxoXmsBm5-e8bTkw1O0V1v3nzIZRg?e=79N2bh">Model</a></td>
+</tr>
+</tbody>
+</table>
+</details>
 </section>
-<section id="citation-coming-soon" class="level2">
-<h2 class="anchored" data-anchor-id="citation-coming-soon">Citation (Coming Soon)</h2>
+<section id="citation" class="level2">
+<h2 class="anchored" data-anchor-id="citation">Citation</h2>
+<p><span class="citation" data-cites="inproceedings">@inproceedings</span>{mondal2025sentinelkilndb, title={SentinelKilnDB: A Large-Scale Dataset and Benchmark for OBB Brick Kiln Detection in South Asia Using Satellite Imagery}, author={Rishabh Mondal and Jeet Parab and Heer Kubadia and Shataxi Dubey and Shardul Junagade and Zeel B. Patel and Nipun Batra}, booktitle={The Thirty-Ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track}, year={2025}, url={https://openreview.net/forum?id=efGzsxVSEC}</p>
+<p>}</p>
 </section>
 <section id="contributing" class="level2">
 <h2 class="anchored" data-anchor-id="contributing">Contributing</h2>

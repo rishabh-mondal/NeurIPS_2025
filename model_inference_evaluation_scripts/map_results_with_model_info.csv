@@ -1,0 +1,6 @@
+model_name,CFCBK,FCBK,Zigzag,Weighted mAP@50,mAP@50:95,mAP@50,mAP@75,CA mAP@50:95,CA mAP@50,CA mAP@75,confidence_threshold,backbone,head,epoch,model_type,backbone_type,neck_type,bbox_head_type
+rotated_imted_faster_rcnn_vit_small_1x_dota_le90_8h,0.021833,0.269714,0.257105,0.256523,0.05858,0.182884,0.019319,0.094055,0.291076,0.034251,0.05,VisionTransformer,RotatedMAEBBoxHead,25,RotatedimTED,VisionTransformer,SimpleFPN,RotatedMAEBBoxHead
+rotated_imted_faster_rcnn_vit_small_1x_dota_le90_8h,0.021865,0.26625,0.256751,0.254528,0.058297,0.181622,0.019312,0.093958,0.291318,0.034258,0.05,VisionTransformer,RotatedMAEBBoxHead,25,RotatedimTED,VisionTransformer,SimpleFPN,RotatedMAEBBoxHead
+rotated_imted_faster_rcnn_vit_small_1x_dota_le90_8h,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05,VisionTransformer,RotatedMAEBBoxHead,25,RotatedimTED,VisionTransformer,SimpleFPN,RotatedMAEBBoxHead
+rotated_imted_faster_rcnn_vit_small_1x_dota_le90_8h,0.0,0.121257,0.083975,0.10107,0.01769,0.068411,0.00078,0.03777,0.150805,0.001864,0.05,VisionTransformer,RotatedMAEBBoxHead,25,RotatedimTED,VisionTransformer,SimpleFPN,RotatedMAEBBoxHead
+rotated_imted_faster_rcnn_vit_small_1x_dota_le90_8h,0.005305,0.247031,0.248933,0.240379,0.055187,0.167090,0.016791,0.090036,0.275191,0.026030,0.050000,VisionTransformer,RotatedMAEBBoxHead,25,RotatedimTED,VisionTransformer,SimpleFPN,RotatedMAEBBoxHead
